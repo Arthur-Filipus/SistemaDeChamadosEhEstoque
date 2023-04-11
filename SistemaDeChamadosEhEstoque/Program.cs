@@ -13,6 +13,8 @@ namespace SistemaDeChamadosEhEstoque
 
             Equipamentos equipamento = new Equipamentos();
 
+            Chamados chamado = new Chamados();
+
             var listaequipamentos = new List<Equipamentos>();
 
             var listachamados = new List<Chamados>();
@@ -71,9 +73,6 @@ namespace SistemaDeChamadosEhEstoque
                 {
                     for (int j = 0; j < 2; j++)
                     {
-
-                        var chamado = new Chamados();
-
                         chamado.MenuChamado();
 
                         if (chamado.escolhamenuchamado == "1")
